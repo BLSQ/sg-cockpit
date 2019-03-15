@@ -13,9 +13,6 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/style.css" />
-
-    <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   </head>
   <body>
@@ -40,6 +37,26 @@
         <div class="col s4">
           <div class="card">
             <div class="card-image">
+              <img src="images/missions.png" />
+              <span class="card-title">Suivi des missions</span>
+            </div>
+            <div class="card-content">
+              <p>
+                Suivi des missions par ZS
+              </p>
+            </div>
+            <div class="card-action">
+              <a
+                href="https://docs.google.com/spreadsheets/d/1buKfJSVf2RW7LHNcOePArvbvSoWLfwksERVxr-RIIYc/edit?usp=drive_web&ouid=115253071374331147492"
+                target="_blank"
+                >Ouvrir</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col s4">
+          <div class="card">
+            <div class="card-image">
               <img src="images/cartesanitaire.png" />
               <span class="card-title">Carte Sanitaire</span>
             </div>
@@ -58,34 +75,18 @@
         <div class="col s4">
           <div class="card">
             <div class="card-image">
-              <img src="images/village.jpg" />
-              <span class="card-title">Villages Assainis</span>
+              <img src="images/compl-small.png" />
+              <span class="card-title">Complétude de l'information</span>
             </div>
             <div class="card-content">
               <p>
-                Programme d'assainissement des villages de l'UNICEF
-              </p>
-            </div>
-            <div class="card-action">
-              <a href="http://uva.bluesquare.org/" target="_blank">Ouvrir</a>
-            </div>
-          </div>
-        </div>
-        <div class="col s4">
-          <div class="card">
-            <div class="card-image">
-              <img src="images/missions.png" />
-              <span class="card-title">Suivi des missions</span>
-            </div>
-            <div class="card-content">
-              <p>
-                Suivi des missions par ZS
+                Suivi de la complétude des données par ZS
               </p>
             </div>
             <div class="card-action">
               <a
-                href="https://docs.google.com/spreadsheets/d/1buKfJSVf2RW7LHNcOePArvbvSoWLfwksERVxr-RIIYc/edit?usp=drive_web&ouid=115253071374331147492"
                 target="_blank"
+                href="https://eu-west-1a.online.tableau.com/#/site/bluesquare/views/SNISDRCCompletenessDashboard/Dashboard?:iid=1"
                 >Ouvrir</a
               >
             </div>
@@ -132,5 +133,11 @@
         </div>
       </div>
     </footer>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.modal');
+        var instances = M.Modal.init(elems, {});
+      });
+    </script>
   </body>
 </html>
