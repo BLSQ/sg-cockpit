@@ -1,0 +1,7 @@
+.card-image {
+    background: linear-gradient(to bottom, white, black);
+}
+
+.card-image > img {
+    opacity: 0.5;
+}
